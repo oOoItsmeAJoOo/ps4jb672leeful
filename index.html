@@ -15,6 +15,7 @@ function DisplayCacheProgress(){setTimeout(function(){window.msgs.innerHTML="Cac
 <div style="text-align:center">
 <button onclick="load_exploit(); return false"> Load Exploit </button> >>
 <button onclick="load_mira(); return false"> Load Mira </button>
+<button onclick="load_mira_unofficial(); return false"> Load Mira (Unofficial)</button>
 <br><br>
 <button onclick="load_exploit_mira(); return false"> Load Exploit + Mira Together </button>
 <br><br><br>
@@ -55,6 +56,13 @@ function load_mira(){
 msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading Mira ...</h1>";
 LoadedMSG="Mira Loaded ✔";
 var script = document.createElement('script');script.src = "pl_mira.js";document.getElementsByTagName('head')[0].appendChild(script);
+var script = document.createElement('script');script.src = "exp_loader.js";document.getElementsByTagName('head')[0].appendChild(script);
+}
+
+function load_mira_unofficial(){
+msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading Mira ...</h1>";
+LoadedMSG="Mira Loaded ✔";
+var script = document.createElement('script');script.src = "pl_mira_unofficial.js";document.getElementsByTagName('head')[0].appendChild(script);
 var script = document.createElement('script');script.src = "exp_loader.js";document.getElementsByTagName('head')[0].appendChild(script);
 }
 
