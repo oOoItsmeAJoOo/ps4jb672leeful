@@ -26417,6 +26417,6 @@ if (ExploitMira != null){
   }
 } 
 else {
-  window.msgs.innerHTML="<h1 style='color:red;font-size:25px;text-align:center;'>Jailbreak failed! - Reboot your PS4 and try again.</h1>";
+  window.msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Jailbreak failed! - Reboot your PS4 and try again.</h1>";
 }
 }
