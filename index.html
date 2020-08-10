@@ -1,6 +1,6 @@
 <html manifest="cache.manifest">
 <head>
-<title>6.72 Exploit Menu By Leeful v5 Beta Test</title>
+<title>6.72 Exploit Menu By Leeful v6 Beta Test</title>
 <script>
 function DLProgress(e){Percent=(Math.round(e.loaded / e.total * 100));window.msgs.innerHTML="Installing Offline Cache: " + Percent + "%";}
 function DisplayCacheProgress(){setTimeout(function(){window.msgs.innerHTML="Cache Installed Successfully";},1000);setTimeout(function(){window.msgs.innerHTML="Now Close And Re-Open Your Browser";},3000);}window.applicationCache.addEventListener("progress",DLProgress,false);window.applicationCache.oncached=function(e){DisplayCacheProgress();};window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};
@@ -32,6 +32,7 @@ function DisplayCacheProgress(){setTimeout(function(){window.msgs.innerHTML="Cac
 <button onclick="load_app2usb(); return false"> App2USB </button>
 <button onclick="load_kerneldump(); return false"> Kernel Dumper </button>
 <button onclick="load_webrte(); return false"> WebRTE </button>
+<button onclick="load_ps4debug(); return false"> PS4debug </button>
 <br><br>
 <button onclick="load_todex(); return false"> ToDEX </button>
 <button onclick="load_historyblock(); return false"> History Blocker </button>
@@ -80,7 +81,7 @@ setTimeout(jailbreak,500);
 function load_binloader(){
 msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading Bin Loader ...</h1>";
 LoadedMSG="Send Payload To Port 9021";
-var script = document.createElement('script');script.src = "exp_loader.js";document.getElementsByTagName('head')[0].appendChild(script);
+var script = document.createElement('script');script.src = "exp_BinLoader.js";document.getElementsByTagName('head')[0].appendChild(script);
 }
 
 function load_HEN(){
@@ -143,6 +144,13 @@ function load_webrte(){
 msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading WebRTE ...</h1>";
 LoadedMSG="WebRTE Loaded ✔";
 var script = document.createElement('script');script.src = "pl_WebRTE.js";document.getElementsByTagName('head')[0].appendChild(script);
+var script = document.createElement('script');script.src = "exp_loader.js";document.getElementsByTagName('head')[0].appendChild(script);
+}
+
+function load_ps4debug(){
+msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading PS4Debug ...</h1>";
+LoadedMSG="PS4Debug Loaded ✔";
+var script = document.createElement('script');script.src = "pl_ps4debug.js";document.getElementsByTagName('head')[0].appendChild(script);
 var script = document.createElement('script');script.src = "exp_loader.js";document.getElementsByTagName('head')[0].appendChild(script);
 }
 
